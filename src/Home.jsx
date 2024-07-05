@@ -7,7 +7,7 @@ function Home() {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        axios.get('https://hostserver-server.vercel.app')
+        axios.get('https://hostserver-server.vercel.app/')
             .then(res => setData(res.data))
             .catch(err => console.log(err));
     }, []);
